@@ -32,7 +32,158 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+/*
+*
+* Author: Samuel N.
+* Description: Just do it
+*
+*/
+
+/* Fuente de texto futurista */
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+/* Fondo oscuro y gradiente */
+body {
+  background: #1a1a1a;
+}
+
+/*-------
+Form --*/
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+form h1 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/*--------------
+Imput files --*/
+
+form input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  color: #fff;
+}
+
+/*----------
+Buttons --*/
+form button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background: #ff0066;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #ff0033;
+}
+
+label {
+  color: #fff;
+}
+
+/*-------------
+Scroll Bar --*/
+/* Estilos de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff0066;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0033;
+}
+
+/* Estilos para la tabla */
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  /* Establece el ancho de la tabla en 100% por defecto */
+}
+
+th,
+td {
+  border-bottom: 1px solid #ff0066;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+th {
+  background: #ff0066;
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+/* Estilos para los botones de acción */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: #ff0066;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 4px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Estilos específicos para pantallas móviles */
+@media screen and (max-width: 768px) {
+  table {
+    width: 50%;
+    /* Cambia el ancho de la tabla al 50% en dispositivos móviles */
   }
 }

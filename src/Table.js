@@ -43,7 +43,9 @@ function Table() {
 
      return (
           <div>
+               <br />
                <form onSubmit={editing ? handleUpdate : handleSubmit}>
+                    <h1>Bienvenido</h1>
                     <label>
                          Nombre:
                          <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
@@ -55,6 +57,7 @@ function Table() {
                     <button type="submit">{editing ? "Actualizar" : "Agregar"}</button>
                     {editing && <button onClick={() => setEditing(false)}>Cancelar</button>}
                </form>
+               <br />
                <table>
                     <thead>
                          <tr>
@@ -71,8 +74,10 @@ function Table() {
                                    <td>{item.nombre}</td>
                                    <td>{item.apellido}</td>
                                    <td>
-                                        <button onClick={() => handleEdit(item.id)}>Editar</button>
-                                        <button onClick={() => handleDelete(item.id)}>Eliminar</button>
+                                        <div class="buttons">
+                                             <button onClick={() => handleEdit(item.id)}>Editar</button>
+                                             <button onClick={() => handleDelete(item.id)}>Eliminar</button>
+                                        </div>
                                    </td>
                               </tr>
                          ))}
